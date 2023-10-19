@@ -1,0 +1,22 @@
+<div class="pt-5">
+  <div class="container">
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <th>Email</th>
+          <th>Title</th>
+          <th>Product Details</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let order of orders">
+        <tr>
+          <td>{{ order.id }}</td>
+          <td>{{ order.title }}</td>
+          <td>{{ order.description.substring(0, 30) }}</td>
+          <td>{{ order.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
